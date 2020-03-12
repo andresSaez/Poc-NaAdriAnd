@@ -1,0 +1,7 @@
+{
+  "name": "smartemis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
