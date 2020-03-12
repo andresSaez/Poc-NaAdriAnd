@@ -1,4 +1,5 @@
 {
+    "stylelint.enable": true,
     "css.validate": true,
     "scss.validate": true,
     "editor.detectIndentation": false,
