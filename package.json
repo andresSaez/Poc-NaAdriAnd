@@ -9,6 +9,10 @@
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint && npm run stylelint",
+        "android:watch": "ionic cap run android -l --external",
+        "ios:watch": "ionic cap run ios -l --external",
+        "ios": "ionic cap run ios",
+        "android": "ionic cap run android",
         "e2e": "ng e2e",
         "stylelint": "stylelint \"src/**/*.scss\"",
         "prettier:check": "prettier --list-different './src/**/*.ts'"
