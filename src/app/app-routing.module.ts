@@ -3,7 +3,19 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule) }
+    { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule) },
+    {
+        path: 'capacitor-navigation',
+        loadChildren: () =>
+            import('./pages/capacitor-navigation/capacitor-navigation.module').then(
+                m => m.CapacitorNavigationPageModule
+            )
+    },
+    {
+        path: 'cordova-navigation',
+        loadChildren: () =>
+            import('./pages/cordova-navigation/cordova-navigation.module').then(m => m.CordovaNavigationPageModule)
+    }
 ];
 
 @NgModule({
