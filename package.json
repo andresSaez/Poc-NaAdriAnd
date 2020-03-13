@@ -8,8 +8,10 @@
         "start": "ng serve",
         "build": "ng build",
         "test": "ng test",
-        "lint": "ng lint",
-        "e2e": "ng e2e"
+        "lint": "ng lint && npm run stylelint",
+        "e2e": "ng e2e",
+        "stylelint": "stylelint \"src/**/*.scss\"",
+        "prettier:check": "prettier --list-different './src/**/*.ts'"
     },
     "lint-staged": {
         "*.scss": [
@@ -76,8 +78,10 @@
         "stylelint": "^13.2.1",
         "stylelint-config-recommended": "^3.0.0",
         "stylelint-config-recommended-scss": "^4.2.0",
+        "stylelint-scss": "^3.14.2",
         "ts-node": "~7.0.0",
         "tslint": "~5.15.0",
+        "tslint-config-prettier": "^1.18.0",
         "typescript": "~3.4.3"
     },
     "description": "An Ionic project",

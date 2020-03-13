@@ -2,7 +2,7 @@
     "extends": "stylelint-config-recommended-scss",
     "rules": {
        "selector-type-no-unknown": [
-           true, { ignoreTypes: ["/^app-/", "/^p-/"] }
+           true, { ignoreTypes: ["/^app-/", "/^p-/","/^ion-/"] }
         ]
     }
 }

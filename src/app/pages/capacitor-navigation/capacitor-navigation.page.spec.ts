@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { HomePage } from './home.page';
+import { CapacitorNavigationPage } from './capacitor-navigation.page';
 
-describe('HomePage', () => {
-    let component: HomePage;
-    let fixture: ComponentFixture<HomePage>;
+describe('CapacitorNavigationPage', () => {
+    let component: CapacitorNavigationPage;
+    let fixture: ComponentFixture<CapacitorNavigationPage>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [HomePage],
+            declarations: [CapacitorNavigationPage],
             imports: [IonicModule.forRoot()]
         }).compileComponents();
 
-        fixture = TestBed.createComponent(HomePage);
+        fixture = TestBed.createComponent(CapacitorNavigationPage);
         component = fixture.componentInstance;
         fixture.detectChanges();
     }));
